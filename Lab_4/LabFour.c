@@ -1,5 +1,5 @@
 /**
- * @file Lab4.c
+ * @file Lab4Four.c
  * @author HMDuran
  * @brief program that will convert input Days to Years, Months and Days.
  * @version 0.1
