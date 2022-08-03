@@ -1,5 +1,5 @@
 /**
- * @file Lab5.c
+ * @file LabFive.c
  * @author HMDuran
  * @brief Program to identify if the input number is positive/negative and
  * odd/even.
