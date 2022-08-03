@@ -1,5 +1,5 @@
 /**
- * @file Lab7.c
+ * @file LabSeven.c
  * @author HMDuran
  * @brief program that will calculate the sum of the given number
  * @version 0.1
