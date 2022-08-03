@@ -1,5 +1,5 @@
 /**
- * @file Lab3.c
+ * @file LabThree.c
  * @author HMDuran
  * @brief program that will convert input seconds to hours, minutes and seconds.
  * @version 0.1
