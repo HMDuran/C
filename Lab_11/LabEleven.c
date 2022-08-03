@@ -1,5 +1,5 @@
 /**
- * @file Lab11.c
+ * @file LabEleven.c
  * @author HMDuran
  * @brief program that will convert meter to centimeter and millimeter.
  * @version 0.1
