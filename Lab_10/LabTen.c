@@ -1,5 +1,5 @@
 /**
- * @file Lab10.c
+ * @file LabTen.c
  * @author HMDuran
  * @brief using one-dimensional array that calculates the sum of five input
  * values from the user and displays the calculated sum.
