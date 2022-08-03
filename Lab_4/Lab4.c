@@ -1,20 +1,37 @@
-//convert input Days to Years, Months and Days. 
+/**
+ * @file Lab4.c
+ * @author HMDuran
+ * @brief program that will convert input Days to Years, Months and Days.
+ * @version 0.1
+ * @date 2022-08-03
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
 
-#include<stdio.h>
-#define ONEMN 30
-#define ONEYR 365
-int main()
-{   
-    int day, yr, mn, dy;
-    
-    printf("\nEnter a Number of Days to convert : ");
-    scanf("%d", &day);
+/* header file */
+#include <stdio.h>
 
-    yr = day / ONEYR;
-    mn = (day - yr * ONEYR)  / ONEMN;
-    dy = (day - yr * ONEYR - mn * ONEMN);
+/* Macro substitution */
+#define DAYS_IN_ONE_MONTH 30
+#define DAYS_IN_ONE_YEAR 365
 
-    printf("\nThe %d Days = %d Year(s) | %d Month(s) | %d Day(s)\n", day,yr,mn,dy);
+int main() {
+  /* declaration of variables */
+  int userDay, year, month, day;
 
-    return 0;
+  /* asking user to input number of days */
+  printf("\nEnter a Number of Days to convert : ");
+  scanf("%d", &userDay);
+
+  /* calculate input Days to Years, Months and Days */
+  year = userDay / DAYS_IN_ONE_YEAR;
+  month = (userDay - year * DAYS_IN_ONE_YEAR) / DAYS_IN_ONE_MONTH;
+  day = (userDay - year * DAYS_IN_ONE_YEAR - month * DAYS_IN_ONE_MONTH);
+
+  /* display output */
+  printf("\nThe %d Days = %d Year(s) | %d Month(s) | %d Day(s)\n", userDay,
+         year, month, day);
+
+  return 0;
 }

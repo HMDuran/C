@@ -1,19 +1,38 @@
-// convert input seconds to hours, minutes and seconds.
+/**
+ * @file Lab3.c
+ * @author HMDuran
+ * @brief program that will convert input seconds to hours, minutes and seconds.
+ * @version 0.1
+ * @date 2022-08-03
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
 
-#include<stdio.h>
+/* header file */
+#include <stdio.h>
 
-int main()
-{   
-    int sec, hr, mn, sc;
-    
-    printf("\nEnter a time in seconds to convert : ");
-    scanf("%d", &sec);
+/* Macro substitution */
+#define SECONDS_IN_ONE_MINUTE 60
+#define SECONDS_IN_ONE_HOUR 3600
 
-    hr = sec / 3600;
-    mn = (sec - (3600*hr)) / 60;
-    sc = sec  % 60;
+int main() {
+  /* declaration of variables */
+  int userSeconds, hours, minutes, seconds;
 
-    printf("\nThe %d seconds = %d hour(s) : %d minute(s) :  %d second(s)\n", sec,hr,mn,sc);
+  /* asking user to input time in seconds */
+  printf("\nEnter a time in seconds to convert : ");
+  scanf("%d", &userSeconds);
 
-    return 0;
+  /* calculate seconds to hours, minutes and seconds */
+  hours = userSeconds / SECONDS_IN_ONE_HOUR;
+  minutes =
+      (userSeconds - (SECONDS_IN_ONE_HOUR * hours)) / SECONDS_IN_ONE_MINUTE;
+  seconds = userSeconds % SECONDS_IN_ONE_MINUTE;
+
+  /* display output */
+  printf("\nThe %d seconds = %d hour(s) : %d minute(s) :  %d second(s)\n",
+         userSeconds, hours, minutes, seconds);
+
+  return 0;
 }
