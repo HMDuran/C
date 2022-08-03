@@ -1,5 +1,5 @@
 /**
- * @file Exercise3.c
+ * @file ExerciseThree.c
  * @author HMDuran
  * @brief program that will convert hours into minutes, seconds
  * @version 0.1
