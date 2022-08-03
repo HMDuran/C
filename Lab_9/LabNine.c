@@ -1,5 +1,5 @@
 /**
- * @file Lab9.c
+ * @file LabNine.c
  * @author HMDuran
  * @brief program that will identify the even and odd numbers if even compute
  * the sum from 1 to n. if odd compute the factorial of n
