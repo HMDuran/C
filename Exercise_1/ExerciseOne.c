@@ -1,5 +1,5 @@
 /**
- * @file Exercise1.c
+ * @file ExerciseOne.c
  * @author HMDuran
  * @brief Display user age with text color function
  * @version 0.1
