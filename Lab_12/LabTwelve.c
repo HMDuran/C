@@ -1,5 +1,5 @@
 /**
- * @file Lab13.c
+ * @file LabTwelve.c
  * @author HMDuran
  * @brief program for measurement conversion
  * @version 0.1
