@@ -1,5 +1,5 @@
 /**
- * @file Exercise2.c
+ * @file ExerciseTwo.c
  * @author HMDuran
  * @brief program will identify if the alphabet is vowel or constant.
  * @version 0.1
