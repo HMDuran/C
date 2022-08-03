@@ -1,7 +1,8 @@
 /**
  * @file Lab5.c
  * @author HMDuran
- * @brief
+ * @brief Program to identify if the input number is positive/negative and
+ * odd/even.
  * @version 0.1
  * @date 2022-08-03
  *
@@ -9,25 +10,28 @@
  *
  */
 
-// identify if positive or negative number
-// identify if odd or even number
-
 /* header file */
 #include <stdio.h>
+
 int main() {
-  int n1;
+  /* declaration of variables */
+  int userNumber;
+
+  /* asking user to enter number */
   printf("Enter a number : ");
-  scanf("%d", &n1);
+  scanf("%d", &userNumber);
 
-  if (n1 >= 0 && n1 % 2 == 0)
-    printf("%d is a Positive and Even Number", n1);
+  if (userNumber >= 0 && userNumber % 2 == 0)
+    printf("%d is a Positive and Even Number", userNumber);
 
-  else if (n1 >= 0 && n1 % 2 != 0)
-    printf("%d is a Postive and Odd Number", n1);
+  else if (userNumber >= 0 && userNumber % 2 != 0)
+    printf("%d is a Postive and Odd Number", userNumber);
 
-  else if (n1 <= 0 && n1 % 2 == 0)
-    printf("%d is a Negative and Even Number", n1);
+  else if (userNumber <= 0 && userNumber % 2 == 0)
+    printf("%d is a Negative and Even Number", userNumber);
 
   else
-    printf("%d is a Negative and Odd Number", n1);
+    printf("%d is a Negative and Odd Number", userNumber);
+
+  return 0;
 }
