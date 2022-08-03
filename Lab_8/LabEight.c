@@ -1,5 +1,5 @@
 /**
- * @file Lab8.c
+ * @file LabEight.c
  * @author HMDuran
  * @brief program that will identify the even and odd numbers for the given
  * number
