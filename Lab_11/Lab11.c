@@ -1,23 +1,36 @@
-//convert meter to centimeter and millimeter.
+/**
+ * @file Lab11.c
+ * @author HMDuran
+ * @brief program that will convert meter to centimeter and millimeter.
+ * @version 0.1
+ * @date 2022-08-03
+ *
+ * @copyright Copyright (c) 2022
+ *
+ */
 
-#include<stdio.h>
-#define ONECM 100
-#define ONEMM 1000
-int main()
-{
-    float m, cm, mm;
-    printf("\t\t\t\t\t\t\t*************************************************************************\n");
-    printf("\t\t\t\t\t\t\t**********THE CONVERSION OF METER TO CENTIMETER AND MILLIMETER***********\n");
-    printf("\n\t\t\t\t\t\t\t\t\tEnter a Length of Meter to convert : ");
-    scanf("%f",&m);
+/* header file */
+#include <stdio.h>
 
-    cm =  ONECM * m;
-    mm =  m * ONEMM;
-    
-    printf("\t\t\t\t\t\t\t\t\tThe Length in Centimer is : %.2f\n", cm);
-    printf("\t\t\t\t\t\t\t\t\tThe Length in Millimeter is : %.2f\n", mm);
-    printf("\n\t\t\t\t\t\t\t************Program Created by Hanah Mae T. Duran from BSCS1*************");
-    printf("\n\t\t\t\t\t\t\t*************************************************************************");
-    return 0;
+/* Macro substitution */
+#define ONE_METER_IN_CENTIMETER 100
+#define ONE_METER_IN_MILLIMETER 1000
 
+int main() {
+  /* declaration of variables */
+  float meter, centimeter, millimeter;
+
+  printf("\nTHE CONVERSION OF METER TO CENTIMETER AND MILLIMETER");
+  /* asking user to input length of meter */
+  printf("\n\nEnter a Length of Meter to convert : ");
+  scanf("%f", &meter);
+
+  /* calculate meter to centimeter and millimeter */
+  centimeter = ONE_METER_IN_CENTIMETER * meter;
+  millimeter = meter * ONE_METER_IN_MILLIMETER;
+
+  /* display output */
+  printf("\n\nThe Length in Centimeter is : %.2f\n", centimeter);
+  printf("The Length in Millimeter is : %.2f\n", millimeter);
+  return 0;
 }
