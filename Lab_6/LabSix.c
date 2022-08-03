@@ -1,5 +1,5 @@
 /**
- * @file Lab6.c
+ * @file LabSix.c
  * @author HMDuran
  * @brief program for computing the area
  * @version 0.1
